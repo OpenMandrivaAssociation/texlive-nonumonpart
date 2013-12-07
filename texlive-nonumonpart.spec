@@ -6,7 +6,7 @@
 # catalog-version 1
 Name:		texlive-nonumonpart
 Version:	1
-Release:	2
+Release:	3
 Summary:	Prevent page numbers on part pages
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/nonumonpart
