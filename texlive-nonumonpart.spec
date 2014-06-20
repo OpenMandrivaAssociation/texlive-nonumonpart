@@ -1,12 +1,12 @@
 # revision 22114
 # category Package
 # catalog-ctan /macros/latex/contrib/nonumonpart
-# catalog-date 2011-04-15 12:43:28 +0200
+# catalog-date 2014-02-26 23:03:13 +0100
 # catalog-license lppl1.2
 # catalog-version 1
 Name:		texlive-nonumonpart
 Version:	1
-Release:	7
+Release:	8
 Summary:	Prevent page numbers on part pages
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/nonumonpart
@@ -55,17 +55,3 @@ load it, and the requirement is met.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1-2
-+ Revision: 754357
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1-1
-+ Revision: 719129
-- texlive-nonumonpart
-- texlive-nonumonpart
-- texlive-nonumonpart
-- texlive-nonumonpart
-
