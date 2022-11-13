@@ -1,19 +1,13 @@
-# revision 22114
-# category Package
-# catalog-ctan /macros/latex/contrib/nonumonpart
-# catalog-date 2014-02-26 23:03:13 +0100
-# catalog-license lppl1.2
-# catalog-version 1
 Name:		texlive-nonumonpart
-Version:	1
-Release:	12
+Version:	22114
+Release:	1
 Summary:	Prevent page numbers on part pages
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/nonumonpart
 License:	LPPL1.2
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/nonumonpart.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/nonumonpart.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/nonumonpart.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/nonumonpart.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/nonumonpart.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/nonumonpart.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -26,12 +20,12 @@ options and defines no user commands; the user needs only to
 load it, and the requirement is met.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -48,7 +42,8 @@ load it, and the requirement is met.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
