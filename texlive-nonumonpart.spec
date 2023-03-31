@@ -1,6 +1,6 @@
 Name:		texlive-nonumonpart
 Version:	22114
-Release:	1
+Release:	2
 Summary:	Prevent page numbers on part pages
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/nonumonpart
