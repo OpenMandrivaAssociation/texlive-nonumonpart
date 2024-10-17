@@ -3,7 +3,7 @@ Version:	22114
 Release:	2
 Summary:	Prevent page numbers on part pages
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/nonumonpart
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/nonumonpart
 License:	LPPL1.2
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/nonumonpart.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/nonumonpart.doc.r%{version}.tar.xz
